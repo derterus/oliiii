@@ -1,0 +1,39 @@
+.header-style {
+    background-color: brown;
+    color: white;
+    font-weight: bold;
+    padding: 10px;
+}
+.brand {
+    display: flex;
+    justify-content: space-between;
+}
+
+.brand img {
+    height: 60px;
+    width: 60px;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul a:hover{
+    color: cyan;
+}
+
+#navbar {
+    display: flex;
+    justify-content: space-between;
+}
+
+#navbar ul {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+}
+
+#navbar li {
+    margin: 0 10px;
+}
