@@ -3,19 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Вход</title>
+    <title>Профиль</title>
     <link rel="stylesheet" href="../css/style.css">
 </head> 
 <body>
     <div id="header-container"></div>
 
-    <h1>Вход</h1>
-    <button type="submit" id="sign-in" onclick="auth()">Войти</button>
+    <h1>Профиль</h1>
+    <button type="submit" id="sign-in" onclick="auth()">Выйти</button>
     <div id="footer-container"></div>
     <script>
         function auth(){
-            localStorage.setItem('isLoggedIn', 'true');
-            window.location.href = "profile.html";
+            localStorage.setItem('isLoggedIn', 'false');
+            window.location.href = "signIN.html";
         }
     </script>
     <script src="../js/include.js"></script>

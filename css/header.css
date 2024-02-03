@@ -20,7 +20,7 @@ a {
 }
 
 ul a:hover{
-    color: cyan;
+    color: rgb(255, 117, 117);
 }
 
 #navbar {
@@ -37,3 +37,30 @@ ul a:hover{
 #navbar li {
     margin: 0 10px;
 }
+
+.right-nav {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    margin-left: 150px;
+}
+.right-nav li {
+    margin: 0 10px;
+}
+@media (max-width: 768px) {
+    .header-style { 
+        padding: 5px;  /* Уменьшаем внутренний отступ */
+    }
+
+    .right-nav { 
+        display: flex; /* Показываем скрытую правую часть навигации */
+    }
+
+    #navbar ul {
+        flex-direction: column; /* Изменяем направление списков для мобильных устройств */
+    }
+    #navbar li { 
+        margin: 5px 0;  /* Уменьшаем вертикальные отступы */
+    }
+}
+
