@@ -3,7 +3,7 @@
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 body {
-    padding-bottom: 10%;
+    padding-bottom: 100px;
 }
 .login {
     display: flex;
@@ -93,10 +93,10 @@ input[type="password"] {
 }
 
 .profile-content{
-    margin-left: 50px;
-    height: 40vh;
+    display:flex;
 }
 .prof {
+    margin-left: 50px;  
     display: block;
     position:absolute;
     background-color: rgb(218, 217, 213);
@@ -152,4 +152,10 @@ input[type="password"] {
 .info {
     display: contents;
     align-items: center;
+}
+.ads div{
+    background-color: rgb(218, 217, 213);
+    padding: 30px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.15);
+    border-radius: 20px;
 }
