@@ -2,4 +2,154 @@
     margin:auto; 
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
+body {
+    padding-bottom: 10%;
+}
+.login {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+}
 
+.sign-in {
+    background-color: #f8f9fa;
+    border-radius: 5px;
+    width: 300px;
+    padding: 20px;
+    margin: 0 auto;
+    box-shadow: 0 0 10px rgba(0,0,0,0.15);
+}
+
+.sign-in h2{
+    margin-bottom: 15px;
+    text-align: center;
+    background-color: #e2dfdf;
+    border-radius: 7px;
+    padding: 5px;
+    color: rgb(88, 88, 88);
+}
+
+.sign-in label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.sign-in button {
+    font-weight: bold;
+    display: block;
+    background-color: brown;
+    border-radius: 7px;
+    color: whitesmoke;
+    border: none;
+    padding: 10px 25px;
+    margin-bottom: 15px;
+    margin-top: 20px;
+}
+
+.sign-in button:hover{
+    background-color: rgb(112, 28, 28);
+    box-shadow: 0 0 10px rgba(0,0,0,0.15);
+}
+
+.links {
+    text-align: center;
+    color:crimson;
+    display: grid;
+}
+
+.links a:hover {
+    color: rgb(145, 14, 40);
+    font-weight: bold;
+}
+
+input[type="email"],
+input[type="tel"],
+input[type="text"],
+input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+}
+
+#profile {
+    background-color: brown;
+    padding: 10px 30px;
+    border: none;
+    color: white;
+    border-radius: 10px;
+    position: fixed;
+    top: 100px;
+    right: 20px;
+    font-weight: bold;
+}
+
+#profile:hover {
+    background-color: rgb(48, 4, 4);
+}
+
+.profile-content{
+    margin-left: 50px;
+    height: 40vh;
+}
+.prof {
+    display: block;
+    position:absolute;
+    background-color: rgb(218, 217, 213);
+    padding: 30px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.15);
+    border-radius: 20px;
+}
+.prof div{
+    margin-bottom: 10px;
+}
+
+.name {
+    display: flex;
+    align-items: center;
+}
+
+.prof img {
+    border-radius: 100%;
+    height: 20vh;
+    width: 11vw;
+    display: flex;
+    align-items: center;
+}
+.tel {
+    margin-top: 30px;
+}
+.tel,
+.email {
+    display: flex;
+}
+
+.tel h4,
+.email h4 {
+    margin-right: 8px;
+}
+.tel button,
+.email button {
+    background-color: darkred;
+    color: white;
+    border-radius: 10px;
+    border:none;
+    font-weight: bold;
+    padding: 5px 20px;
+}
+.tel button:hover,
+.email button:hover {
+    background-color: rgb(48, 4, 4);
+}
+
+
+
+
+.info {
+    display: contents;
+    align-items: center;
+}

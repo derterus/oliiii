@@ -8,9 +8,22 @@
 </head> 
 <body>
     <div id="header-container"></div>
-
-    <h1>Регистрация</h1>
-    <button type="submit" id="sign-in" onclick="auth()">Зарегистрироваться</button>
+    <div class="login">
+        <form action="profile.html" class="sign-in">
+            <h2>Регистрация</h2>
+            <label for="email">Email</label><input type="email" placeholder="test@test.ru" required="">
+            <label for="firstName">Имя</label><input type="text" placeholder="Иван" required="">
+            <label for="lastName">Фамилия</label><input type="text" placeholder="Иванов" required="">
+            <label for="tel">Телефон</label><input type="tel" placeholder="+7(999)8887766" required="">
+            <label for="pass">Пароль</label><input type="password" placeholder="Введите пароль" required="">
+            <label for="conf-pass">Повтор пароля</label><input type="password" placeholder="Повторите пароль" required="">
+            <input type="checkbox" placeholder="Введите пароль" required=""> Я согласен(а) на обработку персональных данных
+            <button id="sign-in" onclick="auth()">Регистрация</button>
+            <div class="links">
+                <a href="signIN.html">Вход</a>
+            </div>
+        </form>
+    </div>
     <div id="footer-container"></div>
     <script>
         function auth(){

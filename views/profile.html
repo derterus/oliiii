@@ -8,9 +8,31 @@
 </head> 
 <body>
     <div id="header-container"></div>
+    <div class="profile-content">
+        <div class="prof">
+            <div>
+                <img src="../images/avatar.jpg">
+            </div>
+            <div class="info">
+                <div class="name">
+                    <h3>Иван Иванов</h3>
+                </div>
+                <div class="tel">
+                    <h4>+7(999)8887766</h4>
+                    <button>Изменить</button>
+                </div>
+                <div class="email">
+                    <h4>ivanov37@test.ru</h4>
+                    <button>Изменить</button>
+                </div>
+            </div>
+        </div>
+    </div>
 
-    <h1>Профиль</h1>
-    <button type="submit" id="sign-in" onclick="auth()">Выйти</button>
+
+
+
+    <button type="submit" id="profile" onclick="auth()">Выйти</button>
     <div id="footer-container"></div>
     <script>
         function auth(){

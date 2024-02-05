@@ -8,14 +8,24 @@
 </head> 
 <body>
     <div id="header-container"></div>
-
-    <h1>Вход</h1>
-    <button type="submit" id="sign-in" onclick="auth()">Войти</button>
+    <div class="login">
+        <form action="profile.html" class="sign-in">
+            <h2>Вход</h2>
+            <label for="email">Email</label>
+            <input type="email" placeholder="test@test.ru" required=""><br/>
+            <label for="pass">Пароль</label>
+            <input type="password" placeholder="Введите пароль" required="">
+            <button id="sign-in" onclick="auth()">Войти</button>
+            <div class="links">
+                <a href="#">Забыли пароль?</a>
+                <a href="signUP.html">Регистрация</a>
+            </div>
+        </form>
+    </div>
     <div id="footer-container"></div>
     <script>
         function auth(){
             localStorage.setItem('isLoggedIn', 'true');
-            window.location.href = "profile.html";
         }
     </script>
     <script src="../js/include.js"></script>
