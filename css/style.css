@@ -1,10 +1,17 @@
 * {
-    margin:auto; 
+    margin: auto;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
+
+.img-ads {
+    width: 20%;
+    height: 20%;
+}
+
 body {
     padding-bottom: 100px;
 }
+
 .login {
     display: flex;
     justify-content: center;
@@ -18,10 +25,10 @@ body {
     width: 300px;
     padding: 20px;
     margin: 0 auto;
-    box-shadow: 0 0 10px rgba(0,0,0,0.15);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
 }
 
-.sign-in h2{
+.sign-in h2 {
     margin-bottom: 15px;
     text-align: center;
     background-color: #e2dfdf;
@@ -48,14 +55,14 @@ body {
     margin-top: 20px;
 }
 
-.sign-in button:hover{
+.sign-in button:hover {
     background-color: rgb(112, 28, 28);
-    box-shadow: 0 0 10px rgba(0,0,0,0.15);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
 }
 
 .links {
     text-align: center;
-    color:crimson;
+    color: crimson;
     display: grid;
 }
 
@@ -92,19 +99,24 @@ input[type="password"] {
     background-color: rgb(48, 4, 4);
 }
 
-.profile-content{
-    display:flex;
+.profile-content {
+    display: flex;
+    height: 75vh;
+    flex-direction: row-reverse;
 }
+
 .prof {
-    margin-left: 50px;  
+    margin: 25px;
     display: block;
-    position:absolute;
+    position: sticky;
     background-color: rgb(218, 217, 213);
     padding: 30px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.15);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
     border-radius: 20px;
+    height: fit-content;
 }
-.prof div{
+
+.prof div {
     margin-bottom: 10px;
 }
 
@@ -120,9 +132,11 @@ input[type="password"] {
     display: flex;
     align-items: center;
 }
+
 .tel {
     margin-top: 30px;
 }
+
 .tel,
 .email {
     display: flex;
@@ -132,15 +146,24 @@ input[type="password"] {
 .email h4 {
     margin-right: 8px;
 }
+
 .tel button,
 .email button {
     background-color: darkred;
     color: white;
     border-radius: 10px;
-    border:none;
+    border: none;
     font-weight: bold;
     padding: 5px 20px;
 }
+
+@media screen and (width=768px) {
+    .img-ads {
+        width: 40%;
+        height: 40%;
+    }
+}
+
 .tel button:hover,
 .email button:hover {
     background-color: rgb(48, 4, 4);
@@ -150,12 +173,66 @@ input[type="password"] {
 
 
 .info {
-    display: contents;
     align-items: center;
 }
-.ads div{
-    background-color: rgb(218, 217, 213);
-    padding: 30px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.15);
+
+.ads h4 {
+    align-content: center;
+}
+
+.ads {
+    width: 75%;
+    position: relative;
+    margin: 15px;
+    overflow-y: scroll;
+    /* height: */
+}
+
+#hidden-element-active div,
+#hidden-element-moderate div,
+#hidden-element-found div,
+#hidden-element-archive div {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     border-radius: 20px;
+    padding: 30px;
+    margin: 10px;
+}
+
+.active-ad {
+    background-color: rgb(189, 248, 181);
+}
+
+.moderation-ad {
+    background-color: rgb(230, 223, 134);
+}
+
+.found-ad {
+    background-color: rgb(144, 216, 188);
+}
+
+.archive-ad {
+    background-color: rgb(163, 133, 98);
+}
+
+.ads h3 {
+    text-align: center;
+}
+
+.active-button,
+.moderate-button,
+.found-button,
+.archive-button {
+    cursor: pointer;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.active-button:hover,
+.moderate-button:hover,
+.found-button:hover,
+.archive-button:hover {
+    background-color: #c2bcbc;
 }
