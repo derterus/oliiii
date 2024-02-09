@@ -12,10 +12,10 @@
         <form action="profile.html" class="sign-in">
             <h2>Вход</h2>
             <label for="email">Email</label>
-            <input type="email" placeholder="test@test.ru" required=""><br/>
+            <input id="email-signIN" type="email" placeholder="test@test.ru" required=""><br/>
             <label for="pass">Пароль</label>
             <input type="password" placeholder="Введите пароль" required="">
-            <button id="sign-in" onclick="auth()">Войти</button>
+            <button id="sign-in" onclick="auth2()">Войти</button>
             <div class="links">
                 <a href="#">Забыли пароль?</a>
                 <a href="signUP.html">Регистрация</a>
@@ -24,8 +24,10 @@
     </div>
     <div id="footer-container"></div>
     <script>
-        function auth(){
+        function auth2(){
+            var log = document.getElementById('email-signIN');
             localStorage.setItem('isLoggedIn', 'true');
+            localStorage.setItem('login', log);
         }
     </script>
     <script src="../js/include.js"></script>

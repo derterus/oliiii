@@ -41,7 +41,7 @@
                 </div>
             </div>
         </div>
-        <div class="ads">
+        <div id="ads" class="ads">
 
             <div  class="active-button" onclick="ActiveCloseclick()" value="Активно"> Активно</div>
 
@@ -139,14 +139,8 @@
 
 
 
-     <button type="submit" id="profile" onclick="auth()">Выйти</button> 
     <div id="footer-container"></div>
-    <script>
-        function auth() {
-            localStorage.setItem('isLoggedIn', 'false');
-            window.location.href = "signIN.html";
-        }
-    </script>
+    
     <script src="../js/include.js"></script>
     <script src="../js/script.js"></script>
 </body>

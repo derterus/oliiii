@@ -18,7 +18,7 @@
             <label for="pass">Пароль</label><input type="password" placeholder="Введите пароль" required="">
             <label for="conf-pass">Повтор пароля</label><input type="password" placeholder="Повторите пароль" required="">
             <input type="checkbox" placeholder="Введите пароль" required=""> Я согласен(а) на обработку персональных данных
-            <button id="sign-in" onclick="auth()">Регистрация</button>
+            <button id="sign-in" onclick="auth1()">Регистрация</button>
             <div class="links">
                 <a href="signIN.html">Вход</a>
             </div>
@@ -26,7 +26,7 @@
     </div>
     <div id="footer-container"></div>
     <script>
-        function auth(){
+        function auth1(){
             localStorage.setItem('isLoggedIn', 'true');
             window.location.href = "profile.html";
         }

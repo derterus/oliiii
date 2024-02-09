@@ -1,16 +1,46 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Добавить</title>
     <link rel="stylesheet" href="../css/style.css">
-</head> 
+</head>
+
 <body>
     <div id="header-container"></div>
     <h1>Добавить</h1>
+    <form>
+        <input type="tel" placeholder="+79991234567" required>
+
+        <input type="email" placeholder="rebut@mail.ru" required>
+        <input id="add-registration" type="checkbox" placeholder="Введите пароль" required> Зарегистрироваться?
+        <span class="hidden-password">
+        <label for="pass">Пароль</label><input type="password" placeholder="Введите пароль" required="">
+        <label for="conf-pass">Повтор пароля</label><input type="password" placeholder="Повторите пароль" required="">
+        </span>
+        <input type="text" placeholder="Собака" required>
+
+        <label class="input-file">
+            <input id="inputImage" type="file" multiple required>
+            <span class="input-file-btn">Выберите файл</span>
+            <span class="input-file-text">Максимум 3 файла</span>
+           
+        </label>
+      
+        <br /><br />
+        <input type="text" placeholder="доп информация" required>
+        <input type="text" placeholder="Клеймо (если есть)">
+        <input type="text" placeholder="Район" required>
+        <input type="date" required><br /><br />
+        <input type="checkbox" placeholder="Введите пароль" required> Я согласен(а) на обработку персональных
+        данных<br /><br />
+        <button id="add-animal">Сохранить</button>
+    </form>
     <div id="footer-container"></div>
     <script src="../js/include.js"></script>
     <script src="../js/script.js"></script>
 </body>
+
 </html>

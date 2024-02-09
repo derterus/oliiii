@@ -82,22 +82,18 @@ input[type="password"] {
     margin-bottom: 20px;
     box-sizing: border-box;
 }
-
+/* 
 #profile {
     background-color: brown;
-    padding: 10px 30px;
     border: none;
     color: white;
     border-radius: 10px;
-    position: fixed;
-    top: 100px;
-    right: 20px;
     font-weight: bold;
 }
 
 #profile:hover {
     background-color: rgb(48, 4, 4);
-}
+} */
 
 .profile-content {
     display: flex;
@@ -147,8 +143,7 @@ input[type="password"] {
     margin-right: 8px;
 }
 
-.tel button,
-.email button {
+ button{
     background-color: darkred;
     color: white;
     border-radius: 10px;
@@ -235,4 +230,24 @@ input[type="password"] {
 .found-button:hover,
 .archive-button:hover {
     background-color: #c2bcbc;
+}
+
+
+input[type="file" i]{
+display: none;
+}
+
+.input-file-btn{
+    background-color: rgb(63, 143, 52);
+    color: white;
+    border-radius: 10px;
+    border: none;
+    font-weight: bold;
+    padding: 5px 20px;
+}
+.hidden-password{
+    display:none;
+}
+#add-registration:checked +.hidden-password{
+    display: block;
 }

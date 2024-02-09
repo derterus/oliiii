@@ -19,6 +19,14 @@ fetch('layouts/header.html')
                 link.style.display = 'none';
             });
         }
+        if(localStorage.getItem('login')==='admin@mail.ru'){
+            let x =document.getElementById('ads');
+            x.style.display = 'none';
+         }
+         else{
+            x.style.display = 'block';
+         }
+
     });
 
 fetch('layouts/footer.html')
