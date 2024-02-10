@@ -1,26 +1,61 @@
 <!doctype html>
 <html lang="ru">
+
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>главная</title>
     <link rel="stylesheet" href="../css/style.css">
-</head> 
+</head>
+
 <body>
     <div id="header-container"></div>
-
+    <h1 class="carusel-title">Недавние объявления</h1>
     <div class="carusel">
-        <img src="" alt="">
-        <h2></h2>
-        <h3></h3>
-        <div id="slides"></div>
-        <button class="readmore"></button>
-    </div>
-
-    <section class="search-animal">
         
-    </section>
+        <div class="strel"><a>←</a></div>
+        <div class="carusel-element">
+            <img src="../images/logo.png" alt="Фотография отсутсвует">
+            <h2>Собака</h2>
+            <h3>пропала вчера в 10 вечера на улице пушкина</h3>
+            <div id="slides"></div>
+            <button class="readmore">Читать больше</button>
+        </div>
+        <div class="carusel-element">
+            <img src="../images/logo.png" alt="Фотография отсутсвует">
+            <h2>Кошка</h2>
+            <h3>пропала вчера в 10 вечера на улице пушкина</h3>
+            <div id="slides"></div>
+            <button class="readmore">Читать больше</button>
+        </div>
+        <div class="carusel-element">
+            <img src="../images/logo.png" alt="Фотография отсутсвует">
+            <h2>Таракан</h2>
+            <h3>пропала вчера в 10 вечера на улице пушкина</h3>
+            <div id="slides"></div>
+            <button class="readmore">Читать больше</button>
+        </div>
+        <div class="carusel-element">
+            <img src="../images/logo.png" alt="Фотография отсутсвует">
+            <h2>Собака</h2>
+            <h3>пропала вчера в 10 вечера на улице пушкина</h3>
+            <div id="slides"></div>
+            <button class="readmore">Читать больше</button>
+        </div>
+        <div class="strel"><a>→</a></div>
+       
+    </div>
+  
+    <form action="">
+        <h3>Быстрый поиск</h3>
+        <div id="livesearch">
+            <input type="text" id="searchInput" onkeyup="liveSearch()" placeholder="Поиск...">
+            <div id="searchDropdown"></div>
+          </div>
+        <button type="button">Поиск</button>
+    </form>
 
+    
     <div class="facts">
         <div id="fact1">помогли найти более 500 животных
             <img src="" alt="">
@@ -52,9 +87,14 @@
     </div>
 
     <form action="" class="animal-search">
-        <input type="text" name="" id="street">
-        <input type="text" name="" id="animal-type">
-        <input type="button" value="">
+        <h3>Поиск</h3>
+        <label for="steet">Район</label>
+        <input type="text" name="street" id="street">
+        <label for="steet">Вид животного</label>
+        <input type="text" name="animal-type" id="animal-type">
+        <label for="steet">Доп. информация</label>
+        <input type="text" name="additional-info" id="additional-info">
+        <button type="button">Поиск</button>
     </form>
 
     <div class="carusel-review">
@@ -77,4 +117,5 @@
     <script src="../js/include.js"></script>
     <script src="../js/script.js"></script>
 </body>
+
 </html>

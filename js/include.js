@@ -24,11 +24,13 @@ fetch('layouts/header.html')
             x.style.display = 'none';
          }
          else{
-            x.style.display = 'block';
+            let ads = document.getElementById('admin-profile');
+            ads.style.display ='none';
          }
 
     });
 
+fetch('profile-admin.html').then(response=>response.text()).then(data=>{document.querySelector('#admin-profile').innerHTML=data;})
 fetch('layouts/footer.html')
 .then(response => response.text())
 .then(data => {

@@ -8,15 +8,24 @@
             <h1><a href="index.html">Новая жизнь</a></h1>
         </div>
         <ul>
-            <li><a href="lost-animals.html">Поиск</a></li>
+            <div class="left-nav">
+            <li><a href="search.html">Поиск</a></li>
             <li><a href="find-animals.html">Найдено животное</a></li>
             <li><a href="add.html">Добавить</a></li>
             <li><a href="review.html">Отзывы</a></li>
-            <div class="right-nav">
+        </div>
+            <div class="right-nav"> 
                 <li class="auth"><a href="signUP.html">Регистрация</a></li>
                 <li class="auth"><a href="signIN.html">Вход</a></li>
                 <li class="profile"><a href="profile.html">Профиль</a></li>
                 <li class="profile"><a onclick="auth3()">Выйти</a></li>
+                <li>
+                        <div class="nav-search" id="livesearch">
+                            <input type="text" id="searchInput" onkeyup="liveSearch()" placeholder="Поиск...">
+                            <div id="searchDropdown"></div>
+                        </div>
+                        <button type="button">Поиск</button>
+                </li>
             </div>
         </ul>
     </div>

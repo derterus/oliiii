@@ -26,8 +26,9 @@
     <script>
         function auth2(){
             var log = document.getElementById('email-signIN');
+            let x =log.value
             localStorage.setItem('isLoggedIn', 'true');
-            localStorage.setItem('login', log);
+            localStorage.setItem('login', x);
         }
     </script>
     <script src="../js/include.js"></script>
