@@ -23,14 +23,31 @@ footer {
   footer a:hover {
     color: #777; 
   }
-  
+  .profile, .auth{
+    display: flex;
+    margin-bottom: 5%;
+  }
   footer ul {
     list-style: none;
     padding: 0; 
     margin: 0; 
+    align-items: center; 
     display: flex; 
   }
-  footer li {
-    margin-right: 15px; 
+    footer li {
+      margin-right: 15px; 
+    }
+
+  @media (max-width: 768px) {
+    footer {
+      /* Adjust styles for smaller screens */
+      /* Example: Change background color to light gray */
+      background-color: #f9f9f9;
+      /* Example: Center-align text */
+      text-align: center;
+      /* Example: Reduce padding */
+      padding: 8px;
+    }
+    
+    /* Additional styles specific to smaller screens can be added here */
   }
-  

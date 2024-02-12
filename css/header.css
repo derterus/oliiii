@@ -3,10 +3,14 @@
     color: white;
     font-weight: bold;
     padding: 10px;
+    margin: auto;
 }
-#searchInput
+.search
 {
-    padding: 4%;
+    padding-top: 4%;
+}
+.auth,.profile{
+    padding-top: 6.5%;
 }
 .brand {
     display: flex;
@@ -54,12 +58,17 @@ ul a:hover{
     justify-content: center;
     list-style-type: none;
     margin-left: 150px;
-    margin-top: 40px;
 }
 .right-nav li {
     margin: 0 10px;
 }
 @media (max-width: 768px) {
+    .brand{
+        margin-bottom: 5%;
+    }
+    .left-nav{
+        margin-top: 5%;
+    }
     .header-style { 
         padding: 5px;  /* Уменьшаем внутренний отступ */
     }
@@ -72,7 +81,7 @@ ul a:hover{
         flex-direction: column; /* Изменяем направление списков для мобильных устройств */
     }
     #navbar li { 
-        margin: 5px 0;  /* Уменьшаем вертикальные отступы */
+        margin: 5px 10px;  /* Уменьшаем вертикальные отступы */
     }
 }
 

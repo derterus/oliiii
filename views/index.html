@@ -21,21 +21,21 @@
             <div id="slides"></div>
             <button class="readmore">Читать больше</button>
         </div>
-        <div class="carusel-element">
+        <div id="hid" class="carusel-element">
             <img src="../images/logo.png" alt="Фотография отсутсвует">
             <h2>Кошка</h2>
             <h3>пропала вчера в 10 вечера на улице пушкина</h3>
             <div id="slides"></div>
             <button class="readmore">Читать больше</button>
         </div>
-        <div class="carusel-element">
+        <div id="hid" class="carusel-element">
             <img src="../images/logo.png" alt="Фотография отсутсвует">
             <h2>Таракан</h2>
             <h3>пропала вчера в 10 вечера на улице пушкина</h3>
             <div id="slides"></div>
             <button class="readmore">Читать больше</button>
         </div>
-        <div class="carusel-element">
+        <div id="hid" class="carusel-element">
             <img src="../images/logo.png" alt="Фотография отсутсвует">
             <h2>Собака</h2>
             <h3>пропала вчера в 10 вечера на улице пушкина</h3>
@@ -46,8 +46,8 @@
        
     </div>
   
-    <form action="">
-        <h3>Быстрый поиск</h3>
+    <form action="" class="lifesearch">
+        <h3>Быстрый поиск животного</h3>
         <div id="livesearch">
             <input type="text" id="searchInput" onkeyup="liveSearch()" placeholder="Поиск...">
             <div id="searchDropdown"></div>
@@ -57,13 +57,14 @@
 
     
     <div class="facts">
-        <div id="fact1">помогли найти более 500 животных
+        <h2 class="facts-title"> Наши достижения</h2>
+        <div id="fact1">Помогли найти более 500 животных.
             <img src="" alt="">
         </div>
-        <div id="fact2">более трех лет способствуем возвращению питомцев к хозяевам
+        <div id="fact2">Более трех лет способствуем возвращению питомцев к хозяевам.
             <img src="" alt="">
         </div>
-        <div id="fact3">все услуги оказываются бесплатно
+        <div id="fact3">Все услуги оказываются бесплатно.
             <img src="" alt="">
         </div>
     </div>
@@ -97,20 +98,50 @@
         <button type="button">Поиск</button>
     </form>
 
-    <div class="carusel-review">
-        <div class="cards">
-            <h2></h2>
-            <img src="" alt="">
-            <div></div>
+    <h1 class="carusel-title">Отзывы</h1>
+    <div class="carusel">
+        
+        <div class="strel"><a>←</a></div>
+        <div class="carusel-element">
+            <img src="../images/logo.png" alt="Фотография отсутсвует">
+            <h2>Никита</h2>
+            <div class="text">круто</div>
             <div id="slides"></div>
-            <button class="readmore"></button>
+            <div class="date">20.10.2024</div>
         </div>
+        <div id="hid" class="carusel-element">
+            <img src="../images/logo.png" alt="Фотография отсутсвует">
+            <h2>Костя</h2>
+            <div class="text">весело</div>
+            <div id="slides"></div>
+            <div class="date">20.10.2024</div>
+        </div>
+        <div id="hid" class="carusel-element">
+            <img src="../images/logo.png" alt="Фотография отсутсвует">
+            <h2>Леша</h2>
+            <div class="text">неплохо</div>
+            <div id="slides"></div>
+            <div class="date">20.10.2024</div>
+        </div>
+        <div id="hid" class="carusel-element">
+            <img src="../images/logo.png" alt="Фотография отсутсвует">
+            <h2>Рома</h2>
+            <div class="text">сервис неплохой</div>
+            <div id="slides"></div>
+            <div class="date">20.10.2024</div>
+        </div>
+        <div class="strel"><a>→</a></div>
+       
     </div>
 
     <form action="" class="subscribe-email">
-        <input type="email" name="" id="email">
-        <input type="checkbox" name="" id="personal-data">
-        <input type="button" value="">
+        <h2>Подпишитесь на рассылку email</h2>
+        <br>
+        <input class="subscribe-email-inpute" type="email" name="" id="email" placeholder="email">
+        <input type="checkbox" name="" id="personal-data"> <label>Согласие на обработку</label>
+        <br>    
+        <br>
+        <button>Подписаться</button> 
     </form>
 
     <div id="footer-container"></div>
